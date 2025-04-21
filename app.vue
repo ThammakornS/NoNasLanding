@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   htmlAttrs: { lang: "en-US" },
-  title: "Nuxt Starter",
+  title: "Indie Data Science",
   meta: [
     {
       name: "description",
