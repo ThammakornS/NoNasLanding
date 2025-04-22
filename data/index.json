@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "We build tools for Data Science",
-    "description": "Craft high-performing, SEO-friendly web experiences with the dynamic power of Nuxt.js and the speed of Netlify's global edge network.",
+    "title": "Fight the mess. Stay indie.",
+    "description": "We’re not your typical data science company. We build web tools that tackle the messy, overlooked, and just plain annoying parts of data work—like missing values, clunky prep, and the pain of trial-and-error modeling. Our tools aren’t trying to be everything. They’re sharp, focused, and built for folks who’d rather spend time thinking than cleaning.",
     "image": "images/hero.jpg",
     "imageAlt": "Nuxt logo and title on abstract background",
     "buttons": [
