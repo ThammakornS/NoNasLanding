@@ -60,17 +60,28 @@ const props = defineProps({
       v-for="item of items"
       class="p-8 border-2 border-dashed rounded-sm border-zinc-300 sm:p-12"
     >
-      <!-- Add image if it exists -->
-      <img
-        v-if="item.image"
-        :src="`/${item.image}`"
-        :alt="item.title"
-        class="w-24 h-24 mx-auto mb-4 object-contain"
-      />
-      <h3 class="text-2xl font-semibold text-center text-zinc-800" v-if="item.title">
-        {{ item.title }}
-      </h3>
-      <p class="mt-2 leading-relaxed text-zinc-500" v-if="item.description">
+      <!-- First row: Image (left) and Title (right) -->
+      <div class="flex items-center gap-4">
+        <!-- Image on the left -->
+        <img
+          v-if="item.image"
+          :src="`/${item.image}`"
+          :alt="item.title"
+          class="w-16 h-16 object-contain flex-shrink-0"
+        />
+        <!-- Title on the right -->
+        <h3
+          v-if="item.title"
+          class="text-2xl font-semibold text-zinc-800 flex-1"
+        >
+          {{ item.title }}
+        </h3>
+      </div>
+      <!-- Second row: Description -->
+      <p
+        v-if="item.description"
+        class="mt-4 text-zinc-500 leading-relaxed"
+      >
         {{ item.description }}
       </p>
     </div>
