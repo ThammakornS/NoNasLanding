@@ -38,14 +38,17 @@
         "description": "NoNas is a user-friendly, web-based tool built with Streamlit (https://streamlit.io/) to preprocess datasets by handling missing values efficiently. Designed for data analysts, scientists, and machine learning practitioners, it provides both manual and automated methods to clean data, ensuring it’s ready for analysis or modeling. The app supports CSV file uploads, offers a sample dataset for testing, and includes visualizations to inspect missing data patterns. Subscribe for $5/month to unlock all features! Try demo at https://nonas-app-demo-d4n8iu2tmcq8eedvtz6j9q.streamlit.app/"
       },
       {
+        "image": "images/Coming_soon.png",
         "title": "SMOTE THAT CHEESE - Balance Your Data",
         "description": "Getting tried with imbalanced datasets? SMOTE THAT CHEESE is a web-based tool that helps you balance your datasets using the Synthetic Minority Over-sampling Technique (SMOTE). It’s designed for data scientists and machine learning practitioners who want to improve their model performance by addressing class imbalance. The app allows users to upload their datasets, select the target variable, and apply SMOTE to generate synthetic samples for the minority class. It also provides visualizations to help users understand the distribution of their data before and after applying SMOTE. Subscribe for $5/month to unlock all features! Try demo at https://smote-that-shh-demo-2g3j4x6z4e7q.streamlit.app/"
       },
       {
+        "image": "images/Coming_soon.png",
         "title": "Lift Curse of Dimensionality",
         "description": "Tired of high-dimensional data? Lift Curse of Dimensionality is a web-based tool that helps you reduce the dimensionality of your datasets using various techniques like PCA, t-SNE, and UMAP. It’s designed for data scientists and machine learning practitioners who want to visualize and analyze their high-dimensional data more effectively. The app allows users to upload their datasets, select the dimensionality reduction technique, and visualize the results in 2D or 3D plots. Subscribe for $5/month to unlock all features! Try demo at https://lift-curse-of-dim-demo-2g3j4x6z4e7q.streamlit.app/"
       },
       {
+        "image": "images/Coming_soon.png",
         "title": "Time Series Benediction - fulfill what missing in time series data",
         "description": "Tired of high-dimensional data? Lift Curse of Dimensionality is a web-based tool that helps you reduce the dimensionality of your datasets using various techniques like PCA, t-SNE, and UMAP. It’s designed for data scientists and machine learning practitioners who want to visualize and analyze their high-dimensional data more effectively. The app allows users to upload their datasets, select the dimensionality reduction technique, and visualize the results in 2D or 3D plots. Subscribe for $5/month to unlock all features! Try demo at https://lift-curse-of-dim-demo-2g3j4x6z4e7q.streamlit.app/"
       }
