@@ -7,7 +7,7 @@
     "buttons": [
       {
         "label": "Browse our apps",
-        "url": "https://nonas-app-full.streamlit.app/"
+        "url": "#features"
       }
     ]
   },

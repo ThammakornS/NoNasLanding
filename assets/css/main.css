@@ -3,3 +3,7 @@
 @theme {
   --font-display: "Helvetica", "sans-serif";
 }
+
+html {
+  scroll-behavior: smooth;
+}
