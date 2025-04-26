@@ -35,7 +35,7 @@
       {
         "image": "images/NoNAs_logo.PNG",
         "title": "NoNAs App - Banish Missing Data",
-        "description": "NoNas is a user-friendly, web-based tool built with Streamlit (https://streamlit.io/) to preprocess datasets by handling missing values efficiently. Designed for data analysts, scientists, and machine learning practitioners, it provides both manual and automated methods to clean data, ensuring it’s ready for analysis or modeling. The app supports CSV file uploads, offers a sample dataset for testing, and includes visualizations to inspect missing data patterns. Subscribe for $5/month to unlock all features! Try demo at https://nonas-app-demo-d4n8iu2tmcq8eedvtz6j9q.streamlit.app/"
+        "description": "NoNas (https://nonas-app-full.streamlit.app/) is a user-friendly, web-based tool built with Streamlit (https://streamlit.io/) to preprocess datasets by handling missing values efficiently. Designed for data analysts, scientists, and machine learning practitioners, it provides both manual and automated methods to clean data, ensuring it’s ready for analysis or modeling. The app supports CSV file uploads, offers a sample dataset for testing, and includes visualizations to inspect missing data patterns. Subscribe for $5/month to unlock all features! Try demo at https://nonas-app-demo-d4n8iu2tmcq8eedvtz6j9q.streamlit.app/"
       },
       {
         "image": "images/Coming_soon.png",
