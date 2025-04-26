@@ -44,13 +44,13 @@ definePageMeta({
     </section>
 
     <!-- Cta section with id -->
-    <section>
+    <!-- <section>
     <Cta
       :title="page.cta.title"
       :description="page.cta.description"
       :buttons="page.cta.buttons"
     ></Cta>
-    </section>
+    </section> -->
 
   </Container>
 </template>
