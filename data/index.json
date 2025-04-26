@@ -6,7 +6,7 @@
     "imageAlt": "Company logo",
     "buttons": [
       {
-        "label": "Browse our apps",
+        "label": "Try our apps",
         "url": "#features"
       }
     ]
