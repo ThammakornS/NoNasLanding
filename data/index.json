@@ -57,15 +57,5 @@
   "testimonials": {
     "title": "Contact Us",
     "description": "Mail to indiedatasciencegroup@gmail.com."
-  },
-  "cta": {
-    "title": "Start Building with Nuxt & Netlify",
-    "description": "Let your next project be smarter, faster, and effortlessly deployable.",
-    "buttons": [
-      {
-        "label": "Get Started Today",
-        "url": "https://www.netlify.com/"
-      }
-    ]
   }
 } 
