@@ -56,6 +56,6 @@
   },
   "testimonials": {
     "title": "Contact Us",
-    "description": "Mail to indiedatasciencegroup@gmail.com."
+    "description": "Mail to <a href='mailto:indiedatasciencegroup@gmail.com' class='text-blue-600 hover:underline'>indiedatasciencegroup@gmail.com</a>."
   }
 } 

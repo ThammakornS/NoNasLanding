@@ -1,18 +1,16 @@
 <script setup>
-  const props = defineProps({
-    title: String,
-    description: String,
-    items: Array
-  });
+const props = defineProps({
+  title: String,
+  description: String,
+  items: Array,
+});
 </script>
 
 <template>
   <h2 class="text-3xl font-bold text-center text-zinc-800 sm:text-4xl" v-if="title">
     {{ title }}
   </h2>
-  <p class="max-w-3xl mx-auto mt-4 text-lg text-center text-zinc-600" v-if="description">
-    {{ description }}
-  </p>
+  <p class="max-w-3xl mx-auto mt-4 text-lg text-center text-zinc-600" v-if="description" v-html="description"></p>
   <div class="mt-10 mb-20 sm:gap-8 sm:columns-2 lg:columns-3">
     <blockquote v-for="item in items"
       class="p-8 mb-8 border-2 border-dashed rounded-sm border-zinc-300 break-inside-avoid sm:p-12">
