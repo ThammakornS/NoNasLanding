@@ -1,22 +1,9 @@
 <script setup>
-import { defineProps } from 'vue';
-import sanitizeHtml from 'sanitize-html';
-
 const props = defineProps({
   title: String,
   description: String,
   items: Array,
 });
-
-// Function to sanitize HTML
-const sanitizeDescription = (description) => {
-  return sanitizeHtml(description, {
-    allowedTags: ['a', 'p', 'strong', 'em'], // Allow only specific tags
-    allowedAttributes: {
-      a: ['href', 'target', 'rel', 'class'], // Allow specific attributes for <a>
-    },
-  });
-};
 </script>
 
 <template>
@@ -37,13 +24,16 @@ const sanitizeDescription = (description) => {
       v-for="item of items"
       class="p-8 border-2 border-dashed rounded-sm border-zinc-300 sm:p-12"
     >
+      <!-- First row: Image (left) and Title (right) -->
       <div class="flex items-center gap-4">
+        <!-- Image on the left -->
         <img
           v-if="item.image"
           :src="`/${item.image}`"
           :alt="item.title"
           class="w-16 h-16 object-contain flex-shrink-0"
         />
+        <!-- Title on the right -->
         <h3
           v-if="item.title"
           class="text-2xl font-semibold text-zinc-800 flex-1"
@@ -51,10 +41,11 @@ const sanitizeDescription = (description) => {
           {{ item.title }}
         </h3>
       </div>
+      <!-- Second row: Description with v-html -->
       <p
         v-if="item.description"
         class="mt-4 text-zinc-500 leading-relaxed"
-        v-html="sanitizeDescription(item.description)"
+        v-html="item.description"
       ></p>
     </div>
   </div>
