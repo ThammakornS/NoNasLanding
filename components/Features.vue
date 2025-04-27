@@ -1,28 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-import DOMPurify from 'dompurify';
-
 const props = defineProps({
   title: String,
   description: String,
   items: Array,
 });
-
-// Function to convert URLs to clickable links
-function linkify(text) {
-  const urlRegex = /(https?:\/\/[^\s)]+)/g;
-  return text.replace(urlRegex, (url) => {
-    return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${url}</a>`;
-  });
-}
-
-// Process descriptions for each item
-const processedItems = ref(
-  props.items.map((item) => ({
-    ...item,
-    description: DOMPurify.sanitize(linkify(item.description)),
-  }))
-);
 </script>
 
 <template>
@@ -40,7 +21,7 @@ const processedItems = ref(
   </p>
   <div class="grid gap-8 mt-10 mb-20 md:grid-cols-2">
     <div
-      v-for="item of processedItems"
+      v-for="item of items"
       class="p-8 border-2 border-dashed rounded-sm border-zinc-300 sm:p-12"
     >
       <!-- First row: Image (left) and Title (right) -->
@@ -60,12 +41,13 @@ const processedItems = ref(
           {{ item.title }}
         </h3>
       </div>
-      <!-- Second row: Description with clickable links -->
+      <!-- Second row: Description -->
       <p
         v-if="item.description"
         class="mt-4 text-zinc-500 leading-relaxed"
-        v-html="item.description"
-      ></p>
+      >
+        {{ item.description }}
+      </p>
     </div>
   </div>
 </template>
